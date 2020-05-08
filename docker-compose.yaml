@@ -1,0 +1,11 @@
+version: '3.1'
+services:
+
+  jenkins:
+    image: jenkins/jenkins
+    container_name: jenkins1010
+    ports:
+      - 8080:8080
+    volumes:
+      - ./jenkinsvol:/var/jenkins_home 
+
