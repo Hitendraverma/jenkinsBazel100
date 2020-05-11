@@ -1,0 +1,19 @@
+Started by user [8mha:////4HtVOTxQOpjXcL6vkfGgjW14xicgOnSZ3nz0EBsbPUqFAAAAlB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyeEgZu/dLi1CIwYQgAwz6xX8AAAAA=[0mJenkins User
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/BazelPOC
+No credentials specified
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/bazelbuild/examples # timeout=10
+Fetching upstream changes from https://github.com/bazelbuild/examples
+ > git --version # timeout=10
+ > git fetch --tags --progress -- https://github.com/bazelbuild/examples +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 7357eb42c2b87a283effbfff6024b442feb5704b (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 7357eb42c2b87a283effbfff6024b442feb5704b # timeout=10
+Commit message: "Run buildifier --lint=fix -r . (#149)"
+ > git rev-list --no-walk 7357eb42c2b87a283effbfff6024b442feb5704b # timeout=10
+[BazelPOC] $ /bin/sh -xe /tmp/jenkins3376534856846117576.sh
+Finished: SUCCESS

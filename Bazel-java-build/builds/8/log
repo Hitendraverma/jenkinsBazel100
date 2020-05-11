@@ -1,0 +1,64 @@
+Started by user [8mha:////4HtVOTxQOpjXcL6vkfGgjW14xicgOnSZ3nz0EBsbPUqFAAAAlB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyeEgZu/dLi1CIwYQgAwz6xX8AAAAA=[0mJenkins User
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/BazelPOC
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[WS-CLEANUP] Done
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/bazelbuild/examples
+ > git init /var/jenkins_home/workspace/BazelPOC # timeout=10
+Fetching upstream changes from https://github.com/bazelbuild/examples
+ > git --version # timeout=10
+ > git fetch --tags --progress -- https://github.com/bazelbuild/examples +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/bazelbuild/examples # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/bazelbuild/examples # timeout=10
+Fetching upstream changes from https://github.com/bazelbuild/examples
+ > git fetch --tags --progress -- https://github.com/bazelbuild/examples +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 7357eb42c2b87a283effbfff6024b442feb5704b (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 7357eb42c2b87a283effbfff6024b442feb5704b # timeout=10
+Commit message: "Run buildifier --lint=fix -r . (#149)"
+ > git rev-list --no-walk 7357eb42c2b87a283effbfff6024b442feb5704b # timeout=10
+[BazelPOC] $ /bin/sh -xe /tmp/jenkins3574591243593191814.sh
++ cd /var/jenkins_home/workspace/BazelPOC/java-tutorial
++ bazel build //:ProjectRunner
+Extracting Bazel installation...
+Starting local Bazel server and connecting to it...
+Loading: 
+Loading: 0 packages loaded
+Loading: 0 packages loaded
+    currently loading: 
+Analyzing: target //:ProjectRunner (1 packages loaded, 0 targets configured)
+Analyzing: target //:ProjectRunner (11 packages loaded, 18 targets configured)
+Analyzing: target //:ProjectRunner (15 packages loaded, 58 targets configured)
+Analyzing: target //:ProjectRunner (17 packages loaded, 81 targets configured)
+Analyzing: target //:ProjectRunner (17 packages loaded, 81 targets configured)
+Analyzing: target //:ProjectRunner (17 packages loaded, 81 targets configured)
+Analyzing: target //:ProjectRunner (17 packages loaded, 81 targets configured)
+Analyzing: target //:ProjectRunner (17 packages loaded, 81 targets configured)
+Analyzing: target //:ProjectRunner (18 packages loaded, 288 targets configured)
+Analyzing: target //:ProjectRunner (18 packages loaded, 288 targets configured)
+Analyzing: target //:ProjectRunner (18 packages loaded, 288 targets configured)
+Analyzing: target //:ProjectRunner (18 packages loaded, 288 targets configured)
+Analyzing: target //:ProjectRunner (18 packages loaded, 288 targets configured)
+Analyzing: target //:ProjectRunner (18 packages loaded, 288 targets configured)
+INFO: Analyzed target //:ProjectRunner (19 packages loaded, 406 targets configured).
+INFO: Found 1 target...
+[0 / 4] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+[5 / 7] [Prepa] Action external/bazel_tools/tools/jdk/platformclasspath.jar
+Target //:ProjectRunner up-to-date:
+  bazel-bin/ProjectRunner.jar
+  bazel-bin/ProjectRunner
+INFO: Elapsed time: 40.319s, Critical Path: 6.09s
+INFO: 3 processes: 2 processwrapper-sandbox, 1 worker.
+INFO: Build completed successfully, 7 total actions
+INFO: Build completed successfully, 7 total actions
++ echo output
+output
++ bazel-bin/ProjectRunner
+Hi!
+Finished: SUCCESS

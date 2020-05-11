@@ -1,0 +1,50 @@
+Started by user [8mha:////4HtVOTxQOpjXcL6vkfGgjW14xicgOnSZ3nz0EBsbPUqFAAAAlB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyeEgZu/dLi1CIwYQgAwz6xX8AAAAA=[0mJenkins User
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/Bazel-cpp-build
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/bazelbuild/examples
+ > git init /var/jenkins_home/workspace/Bazel-cpp-build # timeout=10
+Fetching upstream changes from https://github.com/bazelbuild/examples
+ > git --version # timeout=10
+ > git fetch --tags --progress -- https://github.com/bazelbuild/examples +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/bazelbuild/examples # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/bazelbuild/examples # timeout=10
+Fetching upstream changes from https://github.com/bazelbuild/examples
+ > git fetch --tags --progress -- https://github.com/bazelbuild/examples +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 7357eb42c2b87a283effbfff6024b442feb5704b (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 7357eb42c2b87a283effbfff6024b442feb5704b # timeout=10
+Commit message: "Run buildifier --lint=fix -r . (#149)"
+First time build. Skipping changelog.
+[Bazel-cpp-build] $ /bin/sh -xe /tmp/jenkins1930198451811164287.sh
++ cd /var/jenkins_home/workspace/BazelPOC/cpp-tutorial/stage1
++ bazel build //main:hello-world
+Starting local Bazel server and connecting to it...
+Loading: 
+Loading: 0 packages loaded
+Loading: 0 packages loaded
+    currently loading: main
+Analyzing: target //main:hello-world (1 packages loaded, 0 targets configured)
+Analyzing: target //main:hello-world (11 packages loaded, 18 targets configured)
+Analyzing: target //main:hello-world (11 packages loaded, 18 targets configured)
+Analyzing: target //main:hello-world (11 packages loaded, 18 targets configured)
+INFO: Analyzed target //main:hello-world (14 packages loaded, 48 targets configured).
+INFO: Found 1 target...
+[0 / 4] [Prepa] Creating source manifest for //main:hello-world
+Target //main:hello-world up-to-date:
+[6 / 6] checking cached actions
+  bazel-bin/main/hello-world
+INFO: Elapsed time: 17.036s, Critical Path: 1.09s
+INFO: 2 processes: 2 processwrapper-sandbox.
+INFO: Build completed successfully, 6 total actions
+INFO: Build completed successfully, 6 total actions
++ echo output
+output
++ bazel-bin/main/hello-world
+Hello world
+Wed Apr 29 15:30:00 2020
+Finished: SUCCESS
